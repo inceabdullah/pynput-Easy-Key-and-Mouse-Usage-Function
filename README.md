@@ -34,6 +34,12 @@ in this function:
 
 `Tab key` is a special key from others. Because press more than one time. So, `tabKey(n)` function press `Tab key` one after another `0.1 sec` intervals.
 
+#### enterKey
+
+Like `Tab Key`, `Enter Key` also special.
+
+`enterKey()`
+
 
 #### keyCombine
 

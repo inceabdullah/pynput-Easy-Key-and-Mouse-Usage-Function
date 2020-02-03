@@ -27,6 +27,10 @@ def tabKey(times):
         sleep(0.1)
     return True    
 
+def enterKey():
+    oneKey(Key.enter)    
+    return True
+
 def oneKey(key, release=None):
     #################################
     #                               #
