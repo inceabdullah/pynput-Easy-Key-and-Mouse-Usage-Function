@@ -48,6 +48,11 @@ in this function:
 But in this function:
 `keyCombine("ctrl+c")`
 
+##### Typing Word
+
+`Key Combination` is also used to type like this `word` with `keyCombine("word")`. `keyCombine` types word if `arg` has not `+` symbol.
+
+
 **Noted that:** in some cases, cursor keeps location on the screen even moved to the location disered.
 
 ##### Usage

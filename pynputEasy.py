@@ -47,8 +47,19 @@ def keyEdit(key):
         key = Key[key]    
     return key    
 
+def typeWord(word):
+    lenWord = len(word)
+    for i in range(lenWord):
+        oneKey(word[i])
+        sleep(0.1)
+    return True    
+
 def keyCombine(kombin):
     kombin=kombin.lower()
+    if "+" not in kombin:
+        typeWord(kombin)
+        return True
+
     kombinSplit = kombin.split("+")
     lenKombinSplit = len(kombinSplit)
     for i in range(lenKombinSplit):
