@@ -42,8 +42,11 @@ def oneKey(key, release=None):
     #################################
     if release != 1:
         keyboard.press(key)
+        print("press " + str(key) )
     if release != 0:
         keyboard.release(key)
+        print("release " + str(key) )
+
     return True
 
 def keyEdit(key):
@@ -70,5 +73,5 @@ def keyCombine(kombin):
         oneKey(keyEdit(kombinSplit[i]), 0)
         if i == lenKombinSplit-1:
             for j in range(lenKombinSplit):
-                oneKey(keyEdit(kombinSplit[-i-1]), 1)
+                oneKey(keyEdit(kombinSplit[-j-1]), 1)
     return True                
