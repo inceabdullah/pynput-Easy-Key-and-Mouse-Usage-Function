@@ -15,13 +15,20 @@ def mClick(x=None,y=None):
     mouse.release(Button.left)
     return True
 
+def mRClick(x=None,y=None):
+    if None not in (x, y):
+        movePosition(x,y)
+    mouse.press(Button.right)
+    mouse.release(Button.right)
+    return True    
+
 def mDoubleClick(x=None,y=None):
     if None not in (x, y):
         movePosition(x,y)
     mouse.click(Button.left, 2)
     return True
 
-def tabKey(times):
+def tabKey(times=1):
     for i in range(times):
         oneKey(Key.tab)
         sleep(0.1)
@@ -29,6 +36,18 @@ def tabKey(times):
 
 def enterKey():
     oneKey(Key.enter)    
+    return True
+
+def spaceKey():
+    oneKey(Key.space)
+    return True
+
+def deleteKey():
+    oneKey(Key.delete)
+    return True
+
+def upKey():
+    oneKey(Key.up)
     return True
 
 def oneKey(key, release=None):
@@ -58,7 +77,7 @@ def typeWord(word):
     lenWord = len(word)
     for i in range(lenWord):
         oneKey(word[i])
-        sleep(0.1)
+        sleep(0.3)
     return True    
 
 def keyCombine(kombin):

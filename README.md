@@ -58,6 +58,7 @@ But in this function:
 
 `Key Combination` is also used to type like this `word` with `keyCombine("word")`. `keyCombine` types word if `arg` has not `+` symbol.
 
+**Delete**, **Up** and **Space**keys are added.
 
 **Noted that:** in some cases, cursor keeps location on the screen even moved to the location disered.
 
